@@ -29,6 +29,9 @@ def thumbnails():
     er=None
     return jsonify(error=er,messsage=mes,thumbnails=get_image())
 
+@app.route('/thumbnails/view')
+def view_thumbnails():
+    return render_template('thumbnails.html')
 ###
 # The functions below should be applicable to all Flask apps.
 ###
